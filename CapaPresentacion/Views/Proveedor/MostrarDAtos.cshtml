@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CapaEntidad.Proveedor>
+
+@{
+    ViewBag.Title = "Mostrar Datos";
+}
+
+<h2>Mostrar Datos</h2>
+
+<p class="text-center">
+    <a title="Añadir nuevo Formulario" href="/Proveedor/Formulario"><img src="~/Imgenes/add.png" width="40" alt="add" /></a>
+</p>
+
+<form action="/Proveedor/Buscador">
+    <img src="~/Imgenes/lupa.png" align="left" width="30" alt="Alternate Text" />
+
+    <input type="text" name="nombre" class="form-control  " />
+    <p class="container-fluid">
+        <button type="submit" class="btn btn-info">Buscar</button>
+    </p>
+</form>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Actualizar", new { id = item.Proveedorid })
+            
+            @Html.ActionLink("Eliminar", "Borrar", new { id = item.Proveedorid })
+        </td>
+    </tr>
+}
+
+</table>

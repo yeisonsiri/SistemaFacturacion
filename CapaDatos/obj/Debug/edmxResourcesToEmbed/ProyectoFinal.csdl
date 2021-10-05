@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoFinalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ProyectoFinalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cliente" EntityType="ProyectoFinalModel.Cliente" />
+    <EntitySet Name="Producto" EntityType="ProyectoFinalModel.Producto" />
+    <EntitySet Name="Proveedor" EntityType="ProyectoFinalModel.Proveedor" />
+    <EntitySet Name="Ventas" EntityType="ProyectoFinalModel.Ventas" />
+    <AssociationSet Name="FK_Ventas_Cliente" Association="ProyectoFinalModel.FK_Ventas_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ventas_Producto" Association="ProyectoFinalModel.FK_Ventas_Producto">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Ventas" EntitySet="Ventas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Clienteid" />
+    </Key>
+    <Property Name="Clienteid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cedula" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Categoria" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Ventas" Relationship="ProyectoFinalModel.FK_Ventas_Cliente" FromRole="Cliente" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="Productoid" />
+    </Key>
+    <Property Name="Productoid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Precio" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <NavigationProperty Name="Ventas" Relationship="ProyectoFinalModel.FK_Ventas_Producto" FromRole="Producto" ToRole="Ventas" />
+  </EntityType>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="Proveedorid" />
+    </Key>
+    <Property Name="Proveedorid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cedula" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Ventas">
+    <Key>
+      <PropertyRef Name="Ventaid" />
+    </Key>
+    <Property Name="Ventaid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Producto" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Clienteid" Type="Int32" Nullable="false" />
+    <Property Name="Productoid" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Itebis" Type="Int32" Nullable="false" />
+    <Property Name="Precio" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="ProyectoFinalModel.FK_Ventas_Cliente" FromRole="Ventas" ToRole="Cliente" />
+    <NavigationProperty Name="Producto1" Relationship="ProyectoFinalModel.FK_Ventas_Producto" FromRole="Ventas" ToRole="Producto" />
+  </EntityType>
+  <Association Name="FK_Ventas_Cliente">
+    <End Type="ProyectoFinalModel.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="ProyectoFinalModel.Ventas" Role="Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Clienteid" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="Clienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ventas_Producto">
+    <End Type="ProyectoFinalModel.Producto" Role="Producto" Multiplicity="1" />
+    <End Type="ProyectoFinalModel.Ventas" Role="Ventas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="Productoid" />
+      </Principal>
+      <Dependent Role="Ventas">
+        <PropertyRef Name="Productoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,12 @@
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\CapaEntidad.dll.config
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\EntityFramework.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\EntityFramework.xml
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\obj\Debug\CapaEntidad.csproj.CopyComplete
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache

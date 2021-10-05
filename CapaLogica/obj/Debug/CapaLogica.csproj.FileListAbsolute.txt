@@ -1,0 +1,15 @@
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\EntityFramework.dll
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaDatos.dll.config
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\CapaEntidad.dll.config
+C:\Users\yeiso\OneDrive\Escritorio\yeison\Programacion2\ProyectoFinal\CapaLogica\bin\Debug\EntityFramework.xml

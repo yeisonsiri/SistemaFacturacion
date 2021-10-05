@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Crear";
+}
+
+<div class="container">
+    <div class="col-md-offset-3 col-md-4">
+
+        <h2>Crear Clientes</h2>
+    </div>
+    <br/>
+        <div class="col-md-offset-3 col-md-4">
+
+            <form class="table-bordered" action="" method="post">
+
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-info">Izquierdo</button>
+                    <button type="submit" class="btn btn-info">Central</button>
+                    <button type="submit" class="btn btn-info">Derecho</button>
+                </div>
+
+                <div class="form-group ">
+                    <label>ID:</label>
+
+                    <input type="text" name="txtId" value="" placeholder="Ingrese su ID" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Cedula:</label>
+
+                    <input type="text" name="txtCedula" value="" placeholder="Ingrese su cedula" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Nombre:</label>
+
+                    <input type="text" name="txtNombre" value="" placeholder="Ingrese su nombre" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Telefono:</label>
+                    <input type="text" name="txtTelefono" value="" placeholder="Ingrese su telefono" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" value="" placeholder="Ingrese su Email" class="form-control" />
+                </div>
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                <div class="form-group">
+                    <label>Categoria:</label>
+                    <div>
+                        <input type="radio" id="primiun" name="drone" value="primiun"
+                               checked>
+                        <label for="primiun">Primiun</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="regular" name="drone" value="regular">
+                        <label for="regular">Regular</label>
+                    </div>
+                </div>
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+            </form>
+        </div>
+    </div>

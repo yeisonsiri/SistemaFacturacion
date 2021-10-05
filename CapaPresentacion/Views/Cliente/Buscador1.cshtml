@@ -1,0 +1,54 @@
+﻿@model IEnumerable<CapaEntidad.Cliente>
+
+@{
+    ViewBag.Title = "Buscador1";
+}
+
+<h2>Buscador1</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cedula)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Clienteid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Clienteid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Clienteid })
+        </td>
+    </tr>
+}
+
+</table>
